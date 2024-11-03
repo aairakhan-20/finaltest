@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+         a>i{
+            color:grey;
+        }
+        a>i:hover {
+            color: white;
+        }
+
+        .nv2 {
+            background-color: rgb(141, 179, 250);
+        }
+
+        .n2:hover{
+            background-color: rgb(21, 121, 252);
+            transition: 0.3s ease;
+        }
+
+        .fx {
+            background-color: rgb(21, 121, 252);
+            margin-right: 2px;
+        }
+
+        .dr:hover {
+            color: rgb(21, 121, 252);
+        }
+
+        .btn1 {
+            background-color: red;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: rgb(21, 121, 252);
+            font-weight: bold;
+        }
+
+        .sec1 {
+        background-image: url(images/sec1.webp);
+        opacity: 0.75;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 55px;
+        color: rgb(36, 35, 35);
+        font-weight: bolder;
+        padding-top: 120px;
+    }
+
+    .btn2 {
+        background-color: rgb(21, 121, 252);
+        color: white;
+    }
+    .btn2:hover {
+        background-color: white;
+        color: rgb(21, 121, 252);
+    }
+
+    .sec7 {
+      margin-top: 80px;
+    }
+
+    .fa-flask:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-baby:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-kit-medical:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    h3:hover {
+      color: rgb(21, 121, 252);
+    }
+
+
+    .sec8 {
+      background-color: rgb(6, 7, 87);
+    }
+
+    .fa-whatsapp {
+      color: white;
+    }
+    .fa-whatsapp:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-twitter {
+      color: white;
+    }
+    .fa-twitter:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-google {
+      color: white;
+    }
+    .fa-google:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-pinterest {
+      color: white;
+    }
+    .fa-pinterest:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    
+    .fa-facebook-f {
+      color: white;
+    }
+    .fa-facebook-f:hover {
+      color: rgb(21, 121, 252);
+      cursor: pointer;
+    }
+
+    h6 {
+      color: rgb(21, 121, 252);
+      font-weight: bold;
+    }
+
+    .frm {
+      background-color: rgb(20, 46, 117);
+    }
+    select{
+      background-color: rgb(6, 7, 87);
+    }
+
+    input[type=text] {
+        font-style: italic;
+       border: none;
+        border-bottom: 2px solid rgb(6, 128, 111);
+  background-color: transparent;
+  color: rgb(6, 128, 111);
+}
+
+input[type=number] {
+    font-style: italic;
+border: none;
+  border-bottom: 2px solid rgb(6, 128, 111);
+  background-color: transparent;
+  color: rgb(6, 128, 111);
+}
+
+input[type=email] {
+    font-style: italic;
+border: none;
+  border-bottom: 2px solid rgb(6, 128, 111);
+  background-color: transparent;
+  color: rgb(6, 128, 111);
+}
+
+textarea {
+    border: none;
+  border-bottom: 2px solid rgb(6, 128, 111);
+  background-color: rgb(6, 7, 87);
+  color: rgb(6, 128, 111);
+}
+
+    input::placeholder {
+        color: white;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"><img src="images/logo.png" class="w-50 w-sm-25" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link ps-4" href="#"><i class="fa-solid fa-laptop fs-3"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-4" href="#"><i class="fa-solid fa-tablet-screen-button fs-3"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ps-4" href="#"><i class="fa-solid fa-mobile-screen fs-3"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ps-4" href="#"><i class="fa-solid fa-xmark fs-3 text-white"></i></a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+
+
+      <nav class="navbar navbar-expand-lg nv2">
+        <div class="container-fluid p-lg-3 p-sm-2">
+          <a class="navbar-brand text-white" href="#"><img src="images/logo.png.webp" class="w-sm-25" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold px-4 " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-bold px-4 n2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item dr" href="index.html">Home</a></li>
+            <li><a class="dropdown-item dr" href="about.html">About</a></li>
+            <li><a class="dropdown-item dr" href="services.html">Services</a></li>
+            <li><a class="dropdown-item dr" href="#">Contact</a></li>
+          </ul>
+        </li>
+
+              <li class="nav-item">
+                <a class="nav-link active ps-4 text-white fx fw-bold px-4 n2" aria-current="page" href="services.html">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ps-4 text-white fw-bold px-4 n2" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ps-4 text-white fw-bold px-4" href="#"><button type="button" class="btn btn1 px-lg-5 px-sm-3">Emergencies</button></a>
+            </li>
+              
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid sec1">
+        <div class="container" data-aos="fade-right">
+            <h1 class="w-lg-50 w-sm-100 ps-lg-1 ps-sm-1 ms-lg-3 ms-sm-2 pb-5 mb-3" data-aos="fade-up" style="opacity: 1;">Our Services For You<br><br><p class="fs-6" style="opacity: 1;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error commodi temporibus voluptates.</p></h1>
+        <button class="btn btn2 px-lg-5 px-sm-1 mt-3 fs-lg-4 fs-sm-6 mb-5" data-aos="fade-up" style="opacity: 1;">Discover MediLife</button>
+        </div>
+      </div>
+
+      <div class="sec2 text-center mx-auto mb-5 d-lg-flex d-sm-block">
+
+      <div class="crds w-50 mt-5 text-center" data-aos="fade-left">
+
+        <h3 class="pt-5" data-aos="fade-up"><i class="fa-solid fa-flask"></i> &nbsp; Laboratory</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <br>
+      <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-baby"></i> &nbsp; Baby Care</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-kit-medical"></i> &nbsp; Emergency Room</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        
+      <div class="crds w-50 mt-5 text-center" data-aos="fade-left">
+        
+        <h3 class="pt-5" data-aos="fade-up"><i class="fa-solid fa-user-doctor"></i> &nbsp; Best Doctors</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <br>
+      <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-heart-pulse"></i> &nbsp; Cardiology</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-helicopter"></i> &nbsp; Helicopter</h3>
+        <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+
+            <div class="sec3 container d-lg-flex d-sm-block mb-5 mt-5" data-aos="fade-up">
+                <div class="text w-50" data-aos="fade-right">
+                <h1>All Equips Are Highly Tech</h1>
+                
+                <p class="fs-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                <button class="btn btn2 px-lg-5 px-sm-1 fs-lg-4 fs-sm-6 mb-5" data-aos="fade-up" style="opacity: 1;">Discover MediLife</button>
+            </div>
+            <img src="images/img3.webp" class="w-50" alt="" data-aos="fade-left">
+        </div>
+
+        
+            <h1 class="text-center fs-sm-4 fs-lg-1">We Always Put Our Patients First</h1>
+            <div class="sec4 container d-lg-flex d-sm-block mb-5 mt-5" data-aos="fade-up">
+
+            <div class="crds w-50 mt-5 text-center" data-aos="fade-left">
+        
+                <h3 class="pt-5" data-aos="fade-up"><i class="fa-solid fa-user-doctor"></i> &nbsp; Best Doctors</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <br>
+              <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-heart-pulse"></i> &nbsp; Cardiology</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-helicopter"></i> &nbsp; Helicopter</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <img src="images/stethoscope.webp" class="img-fluid w-50" alt="">
+                
+                
+            <div class="crds w-50 mt-5 text-center" data-aos="fade-left">
+        
+                <h3 class="pt-5" data-aos="fade-up"><i class="fa-solid fa-user-doctor"></i> &nbsp; Trained Faculty</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <br>
+              <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-heart-pulse"></i> &nbsp; Medication</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <h3 data-aos="fade-up" class="pt-4"><i class="fa-solid fa-helicopter"></i> &nbsp; Quick Emrgencies</h3>
+                <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+
+      <div class="sec8 container-fluid p-5 d-lg-flex gap-5 d-sm-block">
+
+        <div class="prt1" data-aos="fade-up">
+          <img src="images/logo.png.webp" alt="">
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad distinctio itaque quod ducimus laboriosam mollitia cumque, ut ipsum facilis.</p>
+          <br><i class="fa-brands fa-google fs-5"></i> &nbsp; <i class="fa-brands fa-whatsapp fs-5"></i> &nbsp; <i class="fa-brands fa-pinterest fs-5"></i> &nbsp; <i class="fa-brands fa-facebook-f fs-5"></i> &nbsp; <i class="fa-brands fa-twitter fs-5"></i>
+        </div>
+
+        <div class="prt2">
+          <h6 data-aos="fade-up">Latest News</h6>
+          <br>
+          <div class="txtimg d-lg-flex gap-2 d-lg-flex" data-aos="fade-up">
+            <img src="images/sec8img1.webp" class="w-50 " alt="">
+          <p class="text-white fw-bold fs-6">
+             &nbsp; Better Health</p>
+             </div>
+
+             <div class="txtimg d-lg-flex gap-2 mt-3 d-lg-flex" data-aos="fade-up">
+              <img src="images/sec8img2.webp" class="w-50 " alt="">
+            <p class="text-white fw-bold fs-6">
+               &nbsp; New Drugs Released</p>
+               </div>
+
+               <div class="txtimg d-lg-flex gap-2 mt-3 d-lg-flex">
+                <img src="images/sec8img3.webp" class="w-50 " alt="">
+              <p class="text-white fw-bold fs-6">
+                 &nbsp; Health Department</p>
+                 </div>
+              
+              </div>
+
+        <div class="prt3" data-aos="fade-up">
+          <h6>Book Your Details</h6>
+          <br>
+          <div class="frm px-4" data-aos="fade-up">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" value="Name">
+          <br><br>
+            <!-- <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Number" value="Number"> -->
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" value="Email">
+            <br><br><button class="btn btn2 px-lg-5 px-sm-1 fs-lg-4 fs-sm-6 mb-5" data-aos="fade-up" style="opacity: 1;">Contact</button>
+        </div>
+        </div>
+
+        <div class="prt5" data-aos="fade-up">
+          <h6>News Letter</h6>
+          <br>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" id="exampleFormControlInput1" value="Email" aria-describedby="button-addon2">
+            <button class="btn btn-outline-primary ms-4" type="button" id="button-addon2">Subscribe</button>
+            <br>
+            <p class="text-secondary" style="font-style: italic;">Lorem ipsum dolor <br> sit amet, consectetur <br> adipisicing elit <br> Quo exercitate.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
